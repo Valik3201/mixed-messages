@@ -12,7 +12,7 @@ This project is a simple knock-knock jokes generator written in JavaScript. It p
 2. **Run the Script:**
    - Open a terminal.
    - Navigate to the project directory.
-   - Run the script using the command: `node knockKnockJokes.js`
+   - Run the script using the command: `node script.js`
 
 3. **Enjoy the Jokes:**
    - The script will generate a random knock-knock joke with each run.

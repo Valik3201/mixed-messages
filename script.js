@@ -197,7 +197,7 @@ function generateRandomJoke() {
   const messageComponents = [];
 
   // Adding "Knock, knock. Who’s there?" to the overall list of components
-  messageComponents.push("Knock, knock.");
+  messageComponents.push("- Knock, knock.");
   messageComponents.push("Who’s there?");
 
   // Iterating through the setup and punchline components
@@ -205,14 +205,48 @@ function generateRandomJoke() {
   const setup = knockKnockJokes.setup[index];
   const punchline = knockKnockJokes.punchline[index];
 
-  // Adding randomly selected components to the overall list
+  // Remove the trailing period from the setup if present
+  const formattedSetup = setup.endsWith(".") ? setup.slice(0, -1) : setup;
+
+  // Adding formatted setup and punchline components to the overall list
   messageComponents.push(setup);
-  messageComponents.push(`${setup} who?`);
+  messageComponents.push(`${formattedSetup} who?`);
   messageComponents.push(punchline);
 
   // Displaying the concatenated message
-  console.log(messageComponents.join("\n"));
+  console.log(messageComponents.join("\n- "));
 }
 
 // Calling the function to generate and display a random joke
+console.log("Knock Lnock Joke :D\n");
 generateRandomJoke();
+
+function generateNonsensicalJoke() {
+  const messageComponents = [];
+
+  // Adding "Knock, knock. Who’s there?" to the overall list of components
+  messageComponents.push("- Knock, knock.");
+  messageComponents.push("Who’s there?");
+
+  // Iterating through the setup and punchline components
+  const setupIndex = getRandomIndex(knockKnockJokes.setup.length);
+  const punchlineIndex = getRandomIndex(knockKnockJokes.punchline.length);
+
+  const setup = knockKnockJokes.setup[setupIndex];
+  const punchline = knockKnockJokes.punchline[punchlineIndex];
+
+  // Remove the trailing period from the setup if present
+  const formattedSetup = setup.endsWith(".") ? setup.slice(0, -1) : setup;
+
+  // Adding formatted setup and punchline components to the overall list
+  messageComponents.push(setup);
+  messageComponents.push(`${formattedSetup} who?`);
+  messageComponents.push(punchline);
+
+  // Displaying the concatenated message
+  console.log(messageComponents.join("\n- "));
+}
+
+// Calling the function to generate and display a random nonsensical joke
+console.log("\nNonsensial Joke :D\n");
+generateNonsensicalJoke();

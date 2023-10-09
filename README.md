@@ -31,7 +31,3 @@ Feel free to contribute more knock-knock jokes by extending the `knockKnockJokes
 setup: ["New Joke Setup."],
 punchline: ["Hilarious punchline!"]
 ```
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

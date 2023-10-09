@@ -218,7 +218,7 @@ function generateRandomJoke() {
 }
 
 // Calling the function to generate and display a random joke
-console.log("Knock Lnock Joke :D\n");
+console.log("Knock-Knock Joke :D\n");
 generateRandomJoke();
 
 function generateNonsensicalJoke() {
